@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.overview {
+  margin-bottom: rem(180);
+}
+.overview__title-wrapper {
+  margin-bottom: rem(45);
+}
+
+.overview__title {
+  @include mq(md) {
+    position: absolute;
+    top: rem(-50);
+    left: rem(20);
+  }
+}

@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.works {
+  margin-bottom: rem(190);
+}
+
+.works__title-wrapper {
+  margin-bottom: rem(48);
+}
+
+.works__title {
+  @include mq(md) {
+    position: absolute;
+    top: rem(-50);
+    right: rem(20);
+  }
+}
+
+.swiper-parent .swiper-pagination-bullet {
+  background: #C4C4C4;
+  opacity: 1;
+}
+
+.swiper-parent .swiper-pagination-bullet-active {
+	background: #ffd700;
+	opacity: 1;
+}
+
+.swiper-parent {
+  position: relative;
+}
+
+.swiper-parent .swiper-pagination {
+  position: absolute;
+  bottom: rem(-20) !important;
+  @include mq(md) {
+    bottom: rem(-30) !important;
+    left: rem(-20) !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  margin-right: rem(5) !important;
+  margin-left: rem(5) !important;
+}
+
+
+

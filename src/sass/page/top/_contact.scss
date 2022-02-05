@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.contact {
+  background-color: #3D3D3D;
+  padding-top: rem(19);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(148);
+    padding-bottom: rem(149);
+  }
+}
+
+.contact__title-wrapper {
+  margin-bottom: rem(15);
+}
+
+.contact__title {
+  @include mq(md) {
+    position: absolute;
+    top: -200%;
+    left: 0;
+  }
+}
+
+.contact__text {
+  color: $white;
+  letter-spacing: 0.125em;
+  margin-bottom: rem(45);
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+.contact__link {
+  @include mq(md) {
+    text-align: center;
+  }
+}

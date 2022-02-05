@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.section__body--row {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(1140);
+    margin: 0 auto;
+    padding-right: rem(20);
+    padding-left: rem(20);
+  }
+}
+
+.section__body--row-reverse {
+  @include mq(md) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(1140);
+    margin: 0 auto;
+    padding-right: rem(20);
+    padding-left: rem(20);
+  }
+}
+
+.section__inner--row {
+  background: #333;
+  @include mq(md) {
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, #333 30%, #333 100%);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.section__inner--row-reverse {
+  background: #333;
+  @include mq(md) {
+    background: linear-gradient(90deg, #333 0%, #333 70%, transparent 70%, transparent 100%);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.section__img {
+  @include mq(md) {
+    margin: 0;
+    max-width: rem(557);
+    width: 100%;
+  }
+}
+.section__img img {
+  aspect-ratio: 375 / 261;
+  object-fit: cover;
+}
+
+.section__content--row {
+  color: $white;
+  max-width: rem(640);
+  width: 100%;
+  padding-top: rem(24);
+  padding-bottom: rem(21);
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: rem(510);
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: rem(20);
+    padding-right: 0;
+    margin: 0;
+  }
+}
+.section__content--row-reverse {
+  color: $white;
+  max-width: rem(640);
+  width: 100%;
+  padding-top: rem(24);
+  padding-bottom: rem(21);
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: rem(510);
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: rem(20);
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.s-header__title {
+  text-align: center;
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: 0.1em;
+  @include mq(md) {
+    text-align: left;
+    font-size: rem(25);
+    letter-spacing: 0.02em;
+  }
+}
+
+.s-header__text {
+  margin-top: rem(24);
+  letter-spacing: 0.15em;
+  @include mq(md) {
+    line-height: 2.1875;
+    margin-top: rem(36);
+    letter-spacing: 0.03em;
+  }
+}
+
+.s-header__link {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}

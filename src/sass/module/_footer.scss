@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.footer__inner {
+  padding: rem(48) 0;
+  @include mq(md) {
+    padding-top: rem(34);
+    padding-right: rem(16);
+    padding-left: rem(16);
+  }
+  text-align: center;
+  color: $white;
+}
+
+.footer__logo {
+  width: rem(70);
+  margin: 0 auto;
+  @include mq(md) {
+    margin: 0;
+    margin-left: rem(16);
+  }
+}
+
+.fnav__item a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: inherit;
+  font-size: rem(16);
+  letter-spacing: 0.075em;
+  line-height: 1.45;
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  @include mq(md) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: rem(16);
+    padding-left: rem(16);
+    &::after {
+    content: "";
+    display: block;
+    width: calc(100% - #{rem(32)});
+    height: 1px;
+    background-color: #ffea2e;
+    opacity: 0;
+    position: absolute;
+    bottom: rem(-6);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+.copy-right {
+  font-size: rem(11);
+  letter-spacing: 0.15em;
+  @include mq(md) {
+    font-size: rem(16);
+    letter-spacing: 0.13em;
+  }
+}
+
+.footer__container {
+  margin-bottom: rem(32);
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.fnav__items {
+  @include mq(md) {
+    display: flex;
+  }
+}

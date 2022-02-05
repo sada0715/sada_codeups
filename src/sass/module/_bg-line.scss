@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.bg-line--top{
+  position: relative;
+}
+
+.bg-line--top::before{
+  content:"";
+  display:inline-block;
+  width:98vw;
+  height:1px;
+  background-color:#F9F871;
+  z-index: -1;
+  position:absolute;
+  top: rem(20);
+  left:0;
+  transform: skewY(61.09deg);
+  transform-origin: left 0;
+  @include mq(md) {
+    top: rem(-100);
+    left:0;
+    transform: skewY(45deg);
+    transform-origin: left 0;
+  }
+}
+
+.bg-line--bottom{
+  position: relative;
+}
+
+.bg-line--bottom::before{
+  content:"";
+  display:inline-block;
+  width:100vw;
+  height:1px;
+  background-color:#F9F871;
+  z-index: -1;
+  position:absolute;
+  top: rem(0);
+  right: rem(140);
+  transform: skewY(-74.95deg);
+  transform-origin: right 0;
+  @include mq(md) {
+    transform: skewY(-45deg);
+    top: rem(-195);
+    right: 0;
+  }
+}
