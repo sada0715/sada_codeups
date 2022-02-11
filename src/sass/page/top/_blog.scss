@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.blog {
-  margin-bottom: rem(150);
-}
 .blog__title-wrapper {
   margin-bottom: rem(63);
 }
@@ -18,7 +15,6 @@
 .blog__link {
   margin-top: rem(24);
   @include mq(md) {
-    max-width: rem(360);
-    margin: 0 auto;
+    text-align: center;
   }
 }

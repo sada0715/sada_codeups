@@ -13,7 +13,7 @@
   font-weight: $regular;
   @include mq(md) {
     font-size: rem(16);
-    padding: rem(15) rem(98);
+    padding: rem(15);
     position: relative;
     overflow: hidden;
     z-index: 1;

@@ -2,10 +2,6 @@
 
 .news {
   color: $white;
-  margin-bottom: rem(101);
-  @include mq(md) {
-    margin-bottom: rem(180);
-  }
 }
 
 .news__inner {

@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.main-view {
-  margin-bottom: rem(24);
-  @include mq(md) {
-    margin-bottom: rem(32);
-  }
-}
-
 .swiper.slider1 {
   width: 100%;
   height: 100vh;

@@ -249,7 +249,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .btn {
     font-size: 1rem;
-    padding: 0.9375rem 6.125rem;
+    padding: 0.9375rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -1056,9 +1056,9 @@ select::-ms-expand {
   }
 }
 
-.blog {
-  margin-bottom: 150px;
-  margin-bottom: 9.375rem;
+.sub-top__img {
+  height: rem(425);
+  height: rem(425);
 }
 
 .blog__title-wrapper {
@@ -1080,8 +1080,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .blog__link {
-    max-width: 22.5rem;
-    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -1127,16 +1126,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .contact__link {
     text-align: center;
-  }
-}
-
-.content {
-  margin-bottom: 71px;
-  margin-bottom: 4.4375rem;
-}
-@media screen and (min-width: 768px) {
-  .content {
-    margin-bottom: 11.875rem;
   }
 }
 
@@ -1228,16 +1217,6 @@ select::-ms-expand {
   .content__link {
     font-size: 1.5625rem;
     letter-spacing: 0.08em;
-  }
-}
-
-.main-view {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .main-view {
-    margin-bottom: 2rem;
   }
 }
 
@@ -1352,13 +1331,6 @@ select::-ms-expand {
 
 .news {
   color: #fff;
-  margin-bottom: 101px;
-  margin-bottom: 6.3125rem;
-}
-@media screen and (min-width: 768px) {
-  .news {
-    margin-bottom: 11.25rem;
-  }
 }
 
 .news__inner {
@@ -1514,11 +1486,6 @@ select::-ms-expand {
   }
 }
 
-.overview {
-  margin-bottom: 180px;
-  margin-bottom: 11.25rem;
-}
-
 .overview__title-wrapper {
   margin-bottom: 45px;
   margin-bottom: 2.8125rem;
@@ -1532,9 +1499,64 @@ select::-ms-expand {
   }
 }
 
-.works {
-  margin-bottom: 190px;
-  margin-bottom: 11.875rem;
+.top-blog {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .top-blog {
+    margin-bottom: 9.375rem;
+  }
+}
+
+.top-content {
+  margin-bottom: 71px;
+  margin-bottom: 4.4375rem;
+}
+@media screen and (min-width: 768px) {
+  .top-content {
+    margin-bottom: 11.875rem;
+  }
+}
+
+.top-main-view {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .top-main-view {
+    margin-bottom: 2rem;
+  }
+}
+
+.top-news {
+  margin-bottom: 101px;
+  margin-bottom: 6.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .top-news {
+    margin-bottom: 11.25rem;
+  }
+}
+
+.top-overview {
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .top-overview {
+    margin-bottom: 9.375rem;
+  }
+}
+
+.top-works {
+  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
+}
+@media screen and (min-width: 768px) {
+  .top-works {
+    margin-bottom: 9.375rem;
+  }
 }
 
 .works__title-wrapper {
