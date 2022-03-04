@@ -2,13 +2,13 @@
 
 .footer__inner {
   padding: rem(48) 0;
+  text-align: center;
+  color: $white;
   @include mq(md) {
     padding-top: rem(34);
     padding-right: rem(16);
     padding-left: rem(16);
   }
-  text-align: center;
-  color: $white;
 }
 
 .footer__logo {
@@ -35,7 +35,11 @@
     padding-bottom: 0;
     padding-right: rem(16);
     padding-left: rem(16);
-    &::after {
+  }
+}
+
+.fnav__item a::after {
+  @include mq(md) {
     content: "";
     display: block;
     width: calc(100% - #{rem(32)});
@@ -47,14 +51,16 @@
     left: 50%;
     transform: translateX(-50%);
     transition: .3s;
-    }
-    &:hover::after {
-      opacity: 1;
-    }
   }
 }
 
-.copy-right {
+.fnav__item a:hover::after {
+  @include mq(md) {
+    opacity: 1;
+  }
+}
+
+.footer__copy-right {
   font-size: rem(11);
   letter-spacing: 0.15em;
   @include mq(md) {

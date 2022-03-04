@@ -47,7 +47,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ヘッダー透過、追従時透過しない
-  var mvh = $('.main-view').height();
+  var mvh = $('.js-header-height').height();
 
   $(window).scroll(function() {
     var top = $(window).scrollTop();
@@ -60,8 +60,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 // Swiper
-// slider1
-var slider1 = new Swiper('.slider1', {
+// js-slider1
+var slider1 = new Swiper('.js-slider1', {
   loop: true,
   effect: 'fade',
   fadeEffect: {
@@ -75,7 +75,7 @@ var slider1 = new Swiper('.slider1', {
 });
 
 // slider2
-var slider2 = new Swiper('.slider2', {
+var slider2 = new Swiper('.js-slider2', {
   effect: 'slide',
   loop: true,
   pagination: {

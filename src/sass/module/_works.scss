@@ -1,15 +1,7 @@
 @use "global" as *;
 
-.works__title-wrapper {
-  margin-bottom: rem(48);
-}
-
 .works__title {
-  @include mq(md) {
-    position: absolute;
-    top: rem(-50);
-    right: rem(20);
-  }
+  margin-bottom: rem(48);
 }
 
 .swiper-parent .swiper-pagination-bullet {

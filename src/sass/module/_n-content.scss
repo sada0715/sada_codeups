@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.n-content {
+  display: block;
+  @include mq(md) {
+    display: flex;
+    align-items: start;
+  }
+}
+
+.n-content:hover {
+  @include mq(md) {
+    .n-content__text {
+      color: #F9F871;
+    }
+  }
+}
+
+.n-content__info {
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    margin-right: rem(55);
+  }
+}
+
+.n-content__date {
+  display: block;
+  margin-right: rem(32);
+  font-size: rem(16);
+  @include mq(md) {
+    margin-right: rem(48);
+  }
+}
+
+.n-content__category {
+  font-size: rem(14);
+  border: 1px solid $white;
+  padding: rem(5) rem(20);
+}
+
+.n-content__block {
+  margin-top: rem(14);
+  max-width: rem(572);
+  @include mq(md) {
+    margin-top: rem(4);
+  }
+}
+
+
+.n-content__text {
+  font-size: rem(16);
+  transition: .3s all  linear;
+}
+

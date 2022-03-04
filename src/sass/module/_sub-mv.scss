@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.sub-mv {
+  position: relative;
+}
+
+.sub-mv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: $white;
+  z-index: 1;
+  font-size: rem(30);
+  font-weight: $bold;
+  letter-spacing: 0.06em;
+}
+.sub-mv__img img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: calc(425 / 375) * 100vw;
+  @include mq(md) {
+    height: calc(370 / 1280) * 100vw;
+  }
+}

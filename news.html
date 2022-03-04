@@ -46,7 +46,7 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="#" class="logo__link">
+          <a href="home.html" class="logo-link">
             <img src="./images/common/CodeUps.svg" alt="ヘッダーロゴ" />
           </a>
         </h1>
@@ -58,48 +58,171 @@
 
         <div class="header__sp-nav sp-nav js-drawer-menu">
           <ul class="sp-nav__items">
-            <li class="sp-nav__item"><a href="">トップ</a></li>
-            <li class="sp-nav__item"><a href="">お知らせ</a></li>
-            <li class="sp-nav__item"><a href="">事業内容</a></li>
-            <li class="sp-nav__item"><a href="">制作実績</a></li>
-            <li class="sp-nav__item"><a href="">企業概要</a></li>
-            <li class="sp-nav__item"><a href="">ブログ</a></li>
-            <li class="sp-nav__item"><a href="">お問い合わせ</a></li>
+            <li class="sp-nav__item"><a href="home.html">トップ</a></li>
+            <li class="sp-nav__item"><a href="news.html">お知らせ</a></li>
+            <li class="sp-nav__item"><a href="content.html">事業内容</a></li>
+            <li class="sp-nav__item"><a href="works.html">制作実績</a></li>
+            <li class="sp-nav__item"><a href="overview.html">企業概要</a></li>
+            <li class="sp-nav__item"><a href="blog.html">ブログ</a></li>
+            <li class="sp-nav__item"><a href="contact.html">お問い合わせ</a></li>
           </ul>
         </div>
 
         <div class="header__pc-nav pc-nav js-drawer-menu">
           <ul class="pc-nav__items">
-            <li class="pc-nav__item"><a href="">お知らせ</a></li>
-            <li class="pc-nav__item"><a href="">事業内容</a></li>
-            <li class="pc-nav__item"><a href="">制作実績</a></li>
-            <li class="pc-nav__item"><a href="">企業概要</a></li>
-            <li class="pc-nav__item"><a href="">ブログ</a></li>
-            <li class="pc-nav__item--white">
-              <a href="">お問い合わせ</a>
+            <li class="pc-nav__item pc-nav__item--base"><a href="news.html">お知らせ</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="content.html">事業内容</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="works.html">制作実績</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="overview.html">企業概要</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="blog.html">ブログ</a></li>
+            <li class="pc-nav__item pc-nav__item--white">
+              <a href="contact.html">お問い合わせ</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <section class="sub-top news-top">
-      <h2 class="sub-top__title">お知らせ</h2>
-      <div class="sub-top__img"><img src="./images/common/news-top-sp.jpg" alt=""></div>
+    <!-- sub-mv -->
+    <section class="sub-mv sub-mv-mb js-header-height">
+      <h2 class="sub-mv__title">お知らせ</h2>
+      <div class="sub-mv__img">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./images/common/news-sub-pc.jpg"/>
+          <img src="./images/common/news-sub-sp.jpg" alt="メインビュー" />
+        </picture>
+      </div>
     </section>
+
+    <!-- breadcrumb -->
+    <ol class="breadcrumb breadcrumb-mb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <div class="breadcrumb__inner inner">
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="home.html">
+              <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="news.html">
+              <span itemprop="name">お知らせ一覧</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </div>
+    </ol>
+
+    <div class="sub-news sub-news-mb">
+      <div class="sub-news__inner">
+        <div class="sub-news__contents">
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+          <a href="" class="sub-news__content n-content">
+            <div class="n-content__info">
+              <time class="n-content__date" datetime="2020-07-20">2020.07.20</time>
+              <div class="n-content__category">お知らせ</div>
+            </div>
+            <div class="n-content__block">
+              <p class="n-content__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</p>
+            </div>
+          </a>
+        </div><!-- /.sub-news__contents -->
+      </div>
+    </div>
 
     <!-- contact -->
     <section class="contact">
       <div class="inner">
-        <div class="contact__title-wrapper section__title-wrapper">
-          <h2 class="contact__title section__title">Contact</h2>
-          <p class="section__sub-title">お問い合わせ</p>
+        <div class="contact__title section-header">
+          <h2 class="section-header__title section-header__title--contact">Contact</h2>
+          <p class="section-header__sub-title">お問い合わせ</p>
         </div>
         <p class="contact__text">
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </p>
         <div class="contact__link">
-          <a href="#" class="btn">お問い合わせへ</a>
+          <a href="contact.html" class="btn">お問い合わせへ</a>
         </div>
       </div>
     </section>
@@ -113,16 +236,16 @@
           </div>
           <nav class="footer__nav">
             <ul class="fnav__items">
-              <li class="fnav__item"><a href="#">トップ</a></li>
-              <li class="fnav__item"><a href="#">お知らせ</a></li>
-              <li class="fnav__item"><a href="#">事業内容</a></li>
-              <li class="fnav__item"><a href="#">企業概要</a></li>
-              <li class="fnav__item"><a href="#">ブログ</a></li>
-              <li class="fnav__item"><a href="#">お問い合わせ</a></li>
+              <li class="fnav__item"><a href="index.html">トップ</a></li>
+              <li class="fnav__item"><a href="news.html">お知らせ</a></li>
+              <li class="fnav__item"><a href="content.html">事業内容</a></li>
+              <li class="fnav__item"><a href="overview.html">企業概要</a></li>
+              <li class="fnav__item"><a href="blog.html">ブログ</a></li>
+              <li class="fnav__item"><a href="contact.html">お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
-        <div class="copy-right">
+        <div class="footer__copy-right">
           <small>&copy; 2021 CodeUps Inc.</small>
         </div>
       </div>

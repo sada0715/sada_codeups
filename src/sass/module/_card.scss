@@ -1,4 +1,5 @@
 @use "global" as *;
+
 .card {
   display: flex;
   flex-direction: column;
@@ -10,15 +11,18 @@
   @include mq(md) {
     margin: 0;
     transition:0.3s all;
-    &:hover {
-      .card__body,
-      .card__info {
-        background-color: #333;
-        color: $white;
-      }
-      .card__img img {
-        transform:scale(1.2,1.2);
-      }
+  }
+}
+
+.card:hover {
+  @include mq(md) {
+    .card__body,
+    .card__info {
+      background-color: #333;
+      color: $white;
+    }
+    .card__img img {
+      transform:scale(1.2,1.2);
     }
   }
 }
