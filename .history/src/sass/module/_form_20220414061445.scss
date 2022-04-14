@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.form {
+  color: $white;
+  margin-bottom: rem(120);
+}
+
+.form__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(640);
+  @include mq("md") {
+    max-width: $inner-s + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.form__items {
+  margin-bottom: rem(48);
+}
+
+.form__item {
+  margin-bottom: rem(32);
+  font-size: rem(14);
+  letter-spacing: 0.05em;
+  line-height: 1.71428571;
+  @include mq(md) {
+    display: flex;
+    justify-content: flex-end;
+    // align-items: center;
+  }
+}
+
+.form__item label {
+  display: block;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    margin-bottom: 0;
+    pt
+  }
+}
+
+.form__item input,
+.form__item textarea {
+  background-color: $white;
+  display: block;
+  width: 100%;
+  padding: rem(10);
+  @include mq(md) {
+    max-width: rem(540);
+    margin-left: rem(25);
+    margin-right: rem(170);
+  }
+}
+
+.form__btn {
+  text-align: center;
+}
+
+.form__btn input{
+  background-color: $white;
+  width: 100%;
+  padding: rem(10);
+  @include mq(md) {
+    max-width: rem(360);
+  }
+}

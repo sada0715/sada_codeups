@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.cards--4column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item--4column {
+  margin-bottom: rem(24);
+  width: 100%;
+  @include mq(md) {
+    margin-bottom: rem(48);
+    max-width: calc(25% - #{rem(32)} * 3 / 4);
+    margin-right: rem(32);
+  }
+}
+
+.cards__item--4column:nth-child(4n) {
+  @include mq(md) {
+    margin-right: 0;
+  }
+}

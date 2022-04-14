@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name=”robots” content=”noindex”>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- pagetop -->
+    <div class="pagetop"></div>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="home.html" class="logo-link">
+            <img src="./images/common/CodeUps.svg" alt="ヘッダーロゴ" />
+          </a>
+        </h1>
+        <button class="header__drawer hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__sp-nav sp-nav js-drawer-menu">
+          <ul class="sp-nav__items">
+            <li class="sp-nav__item"><a href="home.html">トップ</a></li>
+            <li class="sp-nav__item"><a href="news.html">お知らせ</a></li>
+            <li class="sp-nav__item"><a href="content.html">事業内容</a></li>
+            <li class="sp-nav__item"><a href="works.html">制作実績</a></li>
+            <li class="sp-nav__item"><a href="overview.html">企業概要</a></li>
+            <li class="sp-nav__item"><a href="blog.html">ブログ</a></li>
+            <li class="sp-nav__item"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="header__pc-nav pc-nav js-drawer-menu">
+          <ul class="pc-nav__items">
+            <li class="pc-nav__item pc-nav__item--base"><a href="news.html">お知らせ</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="content.html">事業内容</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="works.html">制作実績</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="overview.html">企業概要</a></li>
+            <li class="pc-nav__item pc-nav__item--base"><a href="blog.html">ブログ</a></li>
+            <li class="pc-nav__item pc-nav__item--white">
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- breadcrumb -->
+    <ol class="breadcrumb breadcrumb-mb mt-50" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <div class="breadcrumb__inner inner">
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="home.html">
+              <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="news.html">
+              <span itemprop="name">ブログ記事一覧</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </div>
+    </ol>
+
+    <section class="blog-post blog-post-mb">
+      <div class="blog-post__inner">
+        <div class="blog-post__header">
+          <h2 class="blog-post__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+          <div class="blog-post__info">
+            <tiime class="blog-post__date">2020/06/13</tiime>
+            <div class="blog-post__category">カテゴリ１</div>
+          </div>
+        </div>
+
+        <div class="blog-post__img"><img src="./images/common/blog-post1.jpg" alt=""></div>
+
+        <p class="blog-post__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+        <h3 class="blog-post__title1">見出し2</h3>
+
+        <p class="blog-post__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+        <h4 class="blog-post__title2">見出し3見出し3見出し3</h4>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="inner">
+        <div class="contact__title section-header">
+          <h2 class="section-header__title section-header__title--contact">Contact</h2>
+          <p class="section-header__sub-title">お問い合わせ</p>
+        </div>
+        <p class="contact__text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+        <div class="contact__link">
+          <a href="contact.html" class="btn">お問い合わせへ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <img src="./images/common/CodeUps.svg" alt="フッターロゴ" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="fnav__items">
+              <li class="fnav__item"><a href="index.html">トップ</a></li>
+              <li class="fnav__item"><a href="news.html">お知らせ</a></li>
+              <li class="fnav__item"><a href="content.html">事業内容</a></li>
+              <li class="fnav__item"><a href="overview.html">企業概要</a></li>
+              <li class="fnav__item"><a href="blog.html">ブログ</a></li>
+              <li class="fnav__item"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__copy-right">
+          <small>&copy; 2021 CodeUps Inc.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

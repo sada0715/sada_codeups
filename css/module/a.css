@@ -1,0 +1,44 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.a__text {
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .a__text {
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a__text br {
+    display: none;
+  }
+}
+
+.a__link {
+  text-align: center;
+}
+/*# sourceMappingURL=a.css.map */

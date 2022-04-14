@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.sub-content-header__titile {
+  color: $white;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  font-weight: $regular;
+  text-align: center;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    font-size: rem(25);
+    letter-spacing: 0.08em;
+  }
+}
+
+.sub-content-header__text {
+  color: $white;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  font-weight: $regular;
+  max-width: rem(568);
+  margin: auto;
+  @include mq(md) {
+    line-height: 2.1875;
+  }
+}

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.a__text {
+  color: $white;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: rem(80);
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.a__text br {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.a__link {
+  text-align: center;
+}
+

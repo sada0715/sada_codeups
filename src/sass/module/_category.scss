@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.category__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category__item {
+  padding: rem(3) rem(8);
+  margin-bottom: rem(20);
+}
+
+.category__item + .category__item {
+  margin-left: rem(24);
+
+}
+
+.category__item a {
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+}

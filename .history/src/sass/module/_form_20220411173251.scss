@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.form {
+  color: $white;
+}
+
+.form__btn input{
+  background-color: #: $white;
+}

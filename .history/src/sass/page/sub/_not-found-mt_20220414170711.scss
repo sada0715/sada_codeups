@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.@use "global" as *;
+
+.completion-mt {
+  margin-top: rem(130);
+  @include mq(md) {
+    margin-top: rem(200);
+  }
+}-mt {
+  margin-top: rem(130);
+  @include mq(md) {
+    margin-top: rem(200);
+  }
+}

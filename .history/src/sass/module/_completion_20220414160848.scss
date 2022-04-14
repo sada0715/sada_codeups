@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.completion__text {
+  color: $white;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: rem(80);
+}

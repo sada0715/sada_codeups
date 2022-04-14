@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.form {
+  color: $white;
+  margin-bottom: rem(120);
+}
+
+.form__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(640);
+  @include mq("md") {
+    max-width: $inner-s + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.form__items {
+  margin-bottom: rem(48);
+}
+
+.form__item {
+  margin-bottom: rem(32);
+  font-size: rem(14);
+  letter-spacing: 0.05em;
+  line-height: 1.71428571;
+  @include mq(md) {
+    display: flex;
+    justify-content: flex-end;
+    // align-items: center;
+  }
+}
+
+.form__item label {
+  display: block;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    margin-bottom: 0;
+    padding-top: rem(10);
+  }
+}
+
+.form__item input,
+.form__item textarea {
+  background-color: $white;
+  display: block;
+  width: 100%;
+  padding: rem(10);
+  @include mq(md) {
+    max-width: rem(540);
+    margin-left: rem(25);
+    margin-right: rem(170);
+  }
+}
+
+.form__item--poin input,
+.form__item textarea
+
+.form__btn {
+  text-align: center;
+}
+
+
+.form__btn input{
+  background-color: $white;
+  width: 100%;
+  padding: rem(10);
+  border: 1px solid $white;
+  @include mq(md) {
+    max-width: rem(360);
+    transition: .1s all  linear;
+  }
+}
+
+.form__btn input:hover {
+  @include mq(md) {
+    background-color: $gray;
+    color: $white;
+  }
+}
+
+.form__error {
+  color: #FF5757;
+  letter-spacing: 0.125em;
+  text-align: center;
+  margin-top: rem(-56);
+  margin-bottom: rem(32);
+}

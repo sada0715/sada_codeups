@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.map iframe{
+  margin : 0 calc(50% - 50vw);
+  width : 100vw;
+  height: rem(300);
+  @include mq(md) {
+    margin: 0;
+    width: 100%;
+  }
+}

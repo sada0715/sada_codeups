@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.form {
+  color: $white;
+}
+.form__btn {
+  text-align: center;
+}
+.form__btn input{
+  background-color: $white;
+}

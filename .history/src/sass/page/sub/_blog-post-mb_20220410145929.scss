@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.blog-post-mb {
+  margin-bottom: rem(80);
+  @include mq(md) {
+    mb
+  }
+}

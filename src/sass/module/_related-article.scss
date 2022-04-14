@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.related-article__title {
+  color: $white;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.125em;
+  text-align: center;
+  background-color: $gray;
+  border: 1px solid $white;
+  padding: rem(10) 0;
+  margin-bottom: rem(32);
+}

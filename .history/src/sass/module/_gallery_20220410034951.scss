@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.gallery {
+    margin : 0 calc(50% - 50vw);
+    width : 100vw;
+}
+
+.gallery__main {
+    margin-bottom: rem(32);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: #ff2911; //ここに変更する色を指
+}
+
+
+
+//メイン
+.gallery__main {
+    width: 100%;
+    height: auto;
+}
+
+.gallery__main .swiper-slide {
+    width: auto;
+    height: 400px;
+}
+
+.gallery__main .swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+//サムネイル
+.gallery__thumbnail {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.gallery__thumbnail .swiper-slide {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        overflow: hidden;
+        opacity: .1;
+        &-active {
+            opacity: 1;
+        }
+        
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

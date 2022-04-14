@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.form {
+  color: $white;
+}
+
+.form__items {
+  margin-bottom: rem(32);
+  font-size: rem(14);
+  letter-spacing: 0.05em;
+  line-height: 1.;
+}
+.form__items input,
+.form__items textarea {
+  background-color: $white;
+  display: block;
+  width: 100%;
+}
+
+.form__btn {
+  text-align: center;
+}
+
+.form__btn input{
+  background-color: $white;
+}

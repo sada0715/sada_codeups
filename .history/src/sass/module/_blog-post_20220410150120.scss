@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.blog-post {
+  color: $white;
+}
+
+.blog-post__title {
+  font-size: rem();
+}

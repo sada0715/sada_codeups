@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.blog-post {
+  color: $white;
+}
+
+.blog-post__title {
+  font-size: rem(23);
+  font-weight: $normal;
+  line-height: 1.521;
+}

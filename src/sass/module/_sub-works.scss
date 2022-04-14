@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.sub-works__items {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.sub-works__item {
+  margin-bottom: rem(48);
+  @include mq(md) {
+    max-width: calc(50% - #{rem(50)} * 1/2);
+  }
+}
+
+.sub-works__item:nth-child(even)  {
+  @include mq(md) {
+    margin-left: rem(48);
+  }
+}

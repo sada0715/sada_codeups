@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.pagenation__inner {
+  width: 1000%;
+  max-width: rem(332);
+}
+
+.pagenation__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagenation__item {
+  color: $white;
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.125;
+  border: 1px solid $white;
+  text-transform: uppercase;
+  padding: rem(3) rem(6);
+}
+
+.pagenation__item:hover {
+  @include mq(md) {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+
+.pagenation__item a {
+  height: inherit;
+}
+
+.pagenation__item.previouspostslink {
+  padding: rem(3) rem(8);
+}
+
+.pagenation__item.nextpostslink {
+  padding: rem(3) rem(8);
+}
