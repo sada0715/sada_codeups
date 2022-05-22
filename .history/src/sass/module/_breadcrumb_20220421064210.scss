@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.breadcrumb__item {
+  display: inline;
+  font-weight: $regular;
+}
+
+.breadcrumb__item:after {
+  content: '>';
+  padding: 0 0.2em;
+  color: $white;
+}
+
+.breadcrumb__item:last-child:after {
+  content: '';
+}
+
+.breadcrumb__item a {
+  color: $white
+}
